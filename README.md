@@ -1,15 +1,16 @@
-[tests]: 	https://img.shields.io/circleci/project/github/shellscape/prettier-plugin-package.svg
-[tests-url]: https://circleci.com/gh/shellscape/prettier-plugin-package
+<!-- [tests]: 	https://img.shields.io/circleci/project/github/MaxMilton/prettier-plugin-package2.svg -->
+<!-- [tests-url]: https://circleci.com/gh/MaxMilton/prettier-plugin-package2 -->
 
-[cover]: https://codecov.io/gh/shellscape/prettier-plugin-package/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/shellscape/prettier-plugin-package
+<!-- [cover]: https://codecov.io/gh/MaxMilton/prettier-plugin-package2/branch/master/graph/badge.svg -->
+<!-- [cover-url]: https://codecov.io/gh/MaxMilton/prettier-plugin-package2 -->
 
-[size]: https://packagephobia.now.sh/badge?p=prettier-plugin-package
-[size-url]: https://packagephobia.now.sh/result?p=prettier-plugin-package
+[size]: https://packagephobia.now.sh/badge?p=prettier-plugin-package2
+[size-url]: https://packagephobia.now.sh/result?p=prettier-plugin-package2
 
-![banner](https://raw.githubusercontent.com/shellscape/prettier-plugin-package/master/assets/banner.svg?sanitize=true)
+![banner](https://raw.githubusercontent.com/MaxMilton/prettier-plugin-package2/master/assets/banner.svg?sanitize=true)
 
-# prettier-plugin-package [![tests][tests]][tests-url] [![cover][cover]][cover-url] [![size][size]][size-url] [![libera manifesto](https://img.shields.io/badge/libera-manifesto-lightgrey.svg)](https://liberamanifesto.com)
+<!-- # prettier-plugin-package2 [![tests][tests]][tests-url] [![cover][cover]][cover-url] [![size][size]][size-url] [![libera manifesto](https://img.shields.io/badge/libera-manifesto-lightgrey.svg)](https://liberamanifesto.com) -->
+# prettier-plugin-package2 [![size][size]][size-url] [![libera manifesto](https://img.shields.io/badge/libera-manifesto-lightgrey.svg)](https://liberamanifesto.com)
 
 
 An opinionated `package.json` formatter plugin for [Prettier](https://prettier.io)
@@ -20,25 +21,19 @@ This plugin adds support for `package.json` files used within NPM modules.
 
 ## Requirements
 
-`prettier-plugin-package` is an evergreen module. 🌲 This module requires an [LTS](https://github.com/nodejs/Release) Node version (v8.0.0+).
+`prettier-plugin-package2` is an evergreen module. 🌲 This module requires an [LTS](https://github.com/nodejs/Release) Node version (v8.0.0+).
 
 ## Install
 
 Using npm:
 
 ```console
-npm install prettier prettier-plugin-package --save-dev
+yarn add prettier prettier-plugin-package2 --dev
 ```
-
-<a href="https://www.patreon.com/shellscape">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
-_Please consider donating if you find this project useful._
 
 ## Usage
 
-Once installed, [Prettier plugins](https://prettier.io/docs/en/plugins.html) should be automatically recognized by Prettier. To use this plugin, confirm that it's installed and run Prettier using your preferred method. For example:
+Once installed, [Prettier plugins](https://prettier.io/docs/en/plugins.html) should be automatically recognised by Prettier. To use this plugin, confirm that it's installed and run Prettier using your preferred method. For example:
 
 ```console
 $ npx prettier --write package.json
@@ -80,8 +75,13 @@ Top-level keys are sorted according to a style commonly seen in the packages of 
   'bugs',
 
   // entry
-  'main',
   'bin',
+  'main',
+  'module',
+  'browser',
+  'types',
+  'style',
+  'svelte',
 
   // constraints
   'engines',
@@ -104,13 +104,6 @@ Top-level keys are sorted according to a style commonly seen in the packages of 
 ```
 
 Unknown keys, or keys not part of the list above, will be alphabetically sorted and added to the end of the file. Note that this list takes into account both `npm` and `yarn` keys.
-
-### Forthcoming
-
-Forthcoming rules include:
-
-- [ ] Author format
-- [ ] Repository format
 
 ## Meta
 

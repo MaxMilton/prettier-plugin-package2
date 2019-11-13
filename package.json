@@ -10,7 +10,7 @@
     "node": ">= 8.0.0"
   },
   "scripts": {
-    "lint": "eslint lib test && prettier -c",
+    "lint": "eslint lib test",
     "prepublishOnly": "yarn run lint",
     "test": "ava",
     "test-ci": "yarn run test -- --verbose"

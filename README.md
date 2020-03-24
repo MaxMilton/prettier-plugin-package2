@@ -21,7 +21,7 @@ This plugin adds support for `package.json` files used within NPM modules.
 
 ## Requirements
 
-`prettier-plugin-package2` is an evergreen module. 🌲 This module requires an [LTS](https://github.com/nodejs/Release) Node version (v8.0.0+).
+`prettier-plugin-package2` is an evergreen module. 🌲 This module requires an [LTS](https://github.com/nodejs/Release) Node version (v8.0.0+), and `prettier` v2.0.0+.
 
 ## Install
 

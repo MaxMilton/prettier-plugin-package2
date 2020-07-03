@@ -80,6 +80,7 @@ Top-level keys are sorted according to a style commonly seen in the packages of 
   'module',
   'browser',
   'types',
+  'typings',
   'style',
   'svelte',
 
@@ -94,6 +95,7 @@ Top-level keys are sorted according to a style commonly seen in the packages of 
   'keywords',
 
   // dependencies
+  'workspaces',
   'bundledDependencies',
   'optionalDependencies',
   'peerDependencies',

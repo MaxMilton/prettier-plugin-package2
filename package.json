@@ -28,12 +28,12 @@
     "prettier": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "3.5.1",
-    "eslint-config-shellscape": "2.0.2",
-    "eslint-plugin-prettier": "3.1.2",
-    "execa": "4.0.0",
-    "nyc": "15.0.0",
-    "prettier": "2.0.2"
+    "ava": "3.9.0",
+    "eslint-config-shellscape": "2.1.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "execa": "4.0.2",
+    "nyc": "15.1.0",
+    "prettier": "2.0.5"
   },
   "ava": {
     "files": [

@@ -7,7 +7,7 @@
   "author": "Max Milton <max@wearegenki.com>",
   "main": "lib/index.js",
   "engines": {
-    "node": ">= 8.0.0"
+    "node": ">=10.13.0"
   },
   "scripts": {
     "lint": "eslint lib test",
@@ -28,16 +28,24 @@
     "prettier": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "3.9.0",
-    "eslint-config-shellscape": "2.1.0",
-    "eslint-plugin-prettier": "3.1.4",
-    "execa": "4.0.2",
-    "nyc": "15.1.0",
-    "prettier": "2.0.5"
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "ava": "^3.13.0",
+    "eslint-config-shellscape": "^2.1.0",
+    "execa": "^4.0.3",
+    "lint-staged": "^10.4.0",
+    "nyc": "^15.1.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.1.2"
   },
   "ava": {
     "files": [
       "!**/fixtures/**"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
     ]
   },
   "nyc": {

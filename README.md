@@ -49,7 +49,7 @@ Keys in `engines` are ordered alphabetically.
 
 ### Files
 
-Keys in `files` are ordered alphabetically, followed by `README.md` and `LICENSE` if they exist in the array.
+Keys in `files` are ordered alphabetically (keeping the negations below), followed by `README.md` and `LICENSE` if they exist in the array.
 
 ### Scripts
 
@@ -99,9 +99,14 @@ Top-level keys are sorted according to a style commonly seen in the packages of 
   'bundledDependencies',
   'optionalDependencies',
   'peerDependencies',
+  'peerDependenciesMeta',
   'dependencies',
   'devDependencies',
-  'resolutions'
+  'resolutions',
+
+  // types
+  'types',
+  'typings'
 ]
 ```
 

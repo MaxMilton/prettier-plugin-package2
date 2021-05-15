@@ -1,3 +1,7 @@
+> DEPRECATED: Use [prettier-plugin-pkg](https://github.com/rx-ts/prettier/tree/master/packages/pkg) instead.
+
+---
+
 <!-- [tests]: 	https://img.shields.io/circleci/project/github/MaxMilton/prettier-plugin-package2.svg -->
 <!-- [tests-url]: https://circleci.com/gh/MaxMilton/prettier-plugin-package2 -->
 
